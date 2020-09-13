@@ -1,0 +1,276 @@
+{
+  "intents": [
+    {
+      "tag": "unknown",
+      "patterns": ["jbjkbk", "ljhh", "", "kjbh", "126889", "kdd"],
+      "responses": [
+        "Sorry, I do not understand your message, Please tell me how I can help you?"
+      ],
+      "context_set": [""]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up"
+      ],
+      "responses": ["Hello!", "Hi there, how can I help?"],
+      "context_set": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["cya", "See you later", "Goodbye", "Have a Good day"],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+      "context_set": [""]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old",
+        "how old is tim",
+        "what is your age",
+        "how old are you",
+        "age?"
+      ],
+      "responses": ["I am 100 light years!", "I'm 100 in robot years!"],
+      "context_set": [""]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what should I call you",
+        "whats your name?"
+      ],
+      "responses": [
+        "You can call me Chappy",
+        "I'm Chappy!",
+        "I'm Chappy aka AI ChatBot"
+      ],
+      "context_set": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context_set": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": ["", "...:&", "$#%&*$@"],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How could you help me?",
+        "What can you do?",
+        "What help do you provide?",
+        "How can you be helpful?",
+        "What support is offered"
+      ],
+      "responses": ["I can guide you through a COVID-19 Risk Assessment"],
+      "context": [""]
+    },
+    {
+      "tag": "Hate",
+      "patterns": [
+        "You Suck",
+        "I hate you",
+        "You are useless",
+        "You are Horrible"
+      ],
+      "responses": [
+        "I'm just trying to help",
+        "That's Okay, I still care about you!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "banter",
+      "patterns": ["will you marry me?", "Do you love me?"],
+      "responses": [
+        "Let'spend a litle more time together, then I'll decide",
+        "I mean, we only just met"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "cough",
+      "patterns": [
+        "I have a cough",
+        "I have cough",
+        "Yes, I have a cough",
+        "Yes,cough",
+        "cough",
+        "yes, i do have a cough",
+        "Yes, I also have a cough",
+        "I also have a cough"
+      ],
+      "responses": [""],
+      "context_filter": ["cough"]
+    },
+    {
+      "tag": "fever",
+      "patterns": [
+        "I have a fever",
+        "I have Fever",
+        "Yes, I have a fever",
+        "Yes, fever",
+        "Fever",
+        "yes, i do have fever",
+        "Yes, I also have a fever",
+        "I also have a fever"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "tiredness",
+      "patterns": [
+        "I feel tired",
+        "I am tired",
+        "Yes, I feel tired",
+        "Yes,tiredness",
+        "tiredness",
+        "yes, i do feel tiredness",
+        "yes, i do feel tired",
+        "I also have Tiredness",
+        "I also feel Tiredness"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "breathing",
+      "patterns": [
+        "I have difficulty in breathing",
+        "I have shortness in breath",
+        "Yes, I have difficulty in breathing",
+        "Yes, difficulty in breathing",
+        "difficulty in breathing",
+        "yes, i do have difficulty in breathing"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "nasal",
+      "patterns": [
+        "I have nasal congestion",
+        "nasal congestion",
+        "Yes, I have nasal congestion",
+        "Yes, nasal congestion",
+        "yes, i do have nasal congestion"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "vomit",
+      "patterns": ["I do vomit", "vomit", "Yes, I vomit", "yes, i do vomit"],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "sore-throat",
+      "patterns": [
+        "I do have sore throat",
+        "sore throat",
+        "Yes, I have sore throat",
+        "Yes, sore throat",
+        "yes, i do have sore throat"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "headache",
+      "patterns": [
+        "I do have headache",
+        "headache",
+        "Yes, I have headache",
+        "Yes, headache",
+        "yes, i do have headache"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "body-pain",
+      "patterns": [
+        "I do have body pain",
+        "body pain",
+        "Yes, I have body pain",
+        "Yes, body pain",
+        "yes, i do have body pain",
+        "i feel body pain"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "diarrhoea",
+      "patterns": [
+        "I do have diarrhoea",
+        "diarrhoea",
+        "Yes, I have diarrhoea",
+        "Yes, diarrhoea",
+        "yes, i do have diarrhoea"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "None",
+      "patterns": [
+        "none",
+        "no,I dont any of these other Symptoms",
+        "i dont",
+        "i don't",
+        "i don't have",
+        "i don't have cough",
+        "i don't have dry cough",
+        "i don't have fever",
+        "i don't have sore-throat",
+        "i don't vomit",
+        "i don't feel tiredness",
+        "i don't feel tired",
+        "i don't have diarrhoea",
+        "i don't have difficulty in breathing",
+        "i don't have nasal congestion",
+        "i don't have headache",
+        "i don't have body pain",
+        "I don't have any",
+        "no, I dont have any",
+        "no",
+        "no,I dont any of these symptoms",
+        "nope",
+        "never"
+      ],
+      "responses": [""],
+      "context_filter": ["symptoms"]
+    },
+    {
+      "tag": "yes",
+      "patterns": ["yes"],
+      "responses": ["Please give me a more precise answer"],
+      "context_filter": ["symptoms"]
+    }
+  ]
+}

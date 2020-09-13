@@ -1,0 +1,8 @@
+nltk
+flask_cors
+flask
+keras
+tensorflow
+numpy
+pandas
+pickleshare
